@@ -1,0 +1,21 @@
+{
+  "name": "humanizer2",
+  "interface": {
+    "displayName": "Humanizer2"
+  },
+  "plugins": [
+    {
+      "name": "humanizer2",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/zlocorp/humanizer2.git",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

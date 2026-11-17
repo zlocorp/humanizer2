@@ -1,0 +1,13 @@
+{
+  "name": "humanizer2",
+  "description": "A plugin for editing and reviewing Russian and English prose.",
+  "owner": {
+    "name": "zlocorp"
+  },
+  "plugins": [
+    {
+      "name": "humanizer2",
+      "source": "./"
+    }
+  ]
+}

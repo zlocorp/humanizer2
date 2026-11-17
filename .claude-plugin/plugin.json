@@ -1,0 +1,8 @@
+{
+  "name": "humanizer2",
+  "version": "0.1.0",
+  "description": "Edit and review Russian and English prose while preserving its meaning.",
+  "author": {
+    "name": "zlocorp"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "humanizer2",
+  "version": "0.1.0",
+  "description": "Edit and review Russian and English prose while preserving its meaning.",
+  "author": {
+    "name": "zlocorp",
+    "url": "https://github.com/zlocorp"
+  },
+  "homepage": "https://github.com/zlocorp/humanizer2",
+  "repository": "https://github.com/zlocorp/humanizer2",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Humanizer2",
+        "developerName": "zlocorp",
+        "category": "Productivity",
+        "websiteURL": "https://github.com/zlocorp/humanizer2",
+        "shortDescription": "Natural writing in Russian and English",
+        "longDescription": "Write, review, edit and rewrite Russian and English text while preserving meaning and voice.",
+        "defaultPrompt": [
+          "Review my text and suggest improvements without rewriting it.",
+          "Edit my text to sound natural while preserving its meaning.",
+          "Rewrite my text for a specific audience and purpose."
+        ],
+        "brandColor": "#22594F",
+        "logo": "./assets/humanizer2.svg",
+        "composerIcon": "./assets/humanizer2.svg"
+      }
+    }
+  }
+}
