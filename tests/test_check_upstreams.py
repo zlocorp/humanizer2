@@ -3,6 +3,7 @@ import http.client
 import importlib.util
 import io
 import json
+import re
 import tempfile
 import unittest
 from pathlib import Path
@@ -45,6 +46,16 @@ class UpstreamCheckTests(unittest.TestCase):
         self.assertEqual(0, code)
         self.assertGreater(request.call_count, 0)
         self.assertIn('thevseprod/humanizer-ru', output.getvalue())
+
+    def test_all_documented_sources_are_monitored(self):
+        root = SCRIPT.parents[1]
+        docs = (root / 'docs' / 'THIRD_PARTY_NOTICES.md').read_text(encoding='utf-8')
+        documented = {name.lower() for name in re.findall(
+            r'^\| \[([^]]+)\]\(https://github\.com/[^)]+\)', docs, re.MULTILINE)}
+        entries = json.loads((root / 'scripts' / 'upstreams.json').read_text(encoding='utf-8'))
+        monitored = {entry['repo'].lower() for entry in entries}
+        self.assertTrue(documented, 'no documented sources found')
+        self.assertEqual(documented, monitored)
 
     def test_reports_change_with_review_link_without_writing(self):
         base, current = 'a' * 40, 'b' * 40

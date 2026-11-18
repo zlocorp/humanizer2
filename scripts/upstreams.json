@@ -54,5 +54,53 @@
   {
     "repo": "Winkey86/humanizer-agent-skill",
     "revision": "3fee99f8dbb44c9e86442733d2d60146ba72aa15"
+  },
+  {
+    "repo": "whh110112/human-writing-skills",
+    "revision": "de30632812ca5afcfa843781855755c581c119ea"
+  },
+  {
+    "repo": "nuko-nova-dynamics/nuko-nova-unslop",
+    "revision": "e220ccb5e46133590de2125d5f635cf42cb1f07c"
+  },
+  {
+    "repo": "seyedehsanhadi/sloptrim",
+    "revision": "738fa1230cc7ea2b0510d461fc7d50e886d07319"
+  },
+  {
+    "repo": "Raymondhou0917/speak-human-tw",
+    "revision": "8792ad56aa9e2d93d193b32706a21cc4af1a2080"
+  },
+  {
+    "repo": "Dodaios/ste80-humanizer",
+    "revision": "0243accc75213632e306a4ac2229c4343f13b5d5"
+  },
+  {
+    "repo": "amanmaqsood/prose-humanizer",
+    "revision": "8a7ec74c198ceaaed11fa3560e78bb94a6c1a7fe"
+  },
+  {
+    "repo": "phuryn/work-humanizer",
+    "revision": "0a9065791d021f3dda695f3887cb2ae4c0eacbcf"
+  },
+  {
+    "repo": "forjd/better-writing",
+    "revision": "b5b49af6c8a1b6b70064c2b499c5b16e9b08d9da"
+  },
+  {
+    "repo": "nickture/skills",
+    "revision": "f219c28c616f2938f20542829d6b1f4b1006dc54"
+  },
+  {
+    "repo": "fsbtactic-code/pishi-normalno",
+    "revision": "bfcf786b526303ce591758307677936b57b9893a"
+  },
+  {
+    "repo": "quqxui/context-aware-humanizer",
+    "revision": "1d2fcb4693297f9d2687cdd21a46d900adfc4162"
+  },
+  {
+    "repo": "parasdoshicom/your-voice",
+    "revision": "e92148bdd28ebb33ff78a017302b64075eb78caf"
   }
 ]

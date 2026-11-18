@@ -69,6 +69,16 @@ class SkillStructureTests(unittest.TestCase):
         if policy.exists():
             self.assertFalse(codex_implicit_disabled(policy.read_text(encoding='utf-8')))
 
+    def test_claude_invocation_field_is_a_single_boolean(self):
+        # Claude Code accepts this field even though generic skill validators may not.
+        for path in SKILLS.glob('*/SKILL.md'):
+            with self.subTest(skill=path.parent.name):
+                metadata, _ = frontmatter(path.read_text(encoding='utf-8'))
+                values = re.findall(r'(?m)^disable-model-invocation:[ \t]*([^\n]*?)\s*$', metadata)
+                self.assertLessEqual(len(values), 1, 'duplicate invocation field')
+                if values:
+                    self.assertRegex(values[0], r'^(?:true|false)(?:[ \t]+#.*)?$')
+
     def test_explicit_modes_reference_shared_skill_and_require_invocation(self):
         shared = (SKILLS / 'humanizer2' / 'SKILL.md').resolve()
         for mode in MODES:
