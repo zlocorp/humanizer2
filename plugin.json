@@ -24,8 +24,16 @@
           "Rewrite my text for a specific audience and purpose."
         ],
         "brandColor": "#22594F",
-        "logo": "./assets/humanizer2.svg",
-        "composerIcon": "./assets/humanizer2.svg"
+        "logo": "./assets/humanizer2.png",
+        "composerIcon": "./assets/humanizer2.png"
+      },
+      "publication": {
+        "translations": {
+          "ru-RU": {
+            "subtitle": "Живые тексты на двух языках",
+            "description": "Создавайте, проверяйте, редактируйте и переписывайте тексты на русском и английском, сохраняя смысл и авторский голос."
+          }
+        }
       }
     }
   }
