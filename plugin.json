@@ -16,7 +16,7 @@
         "developerName": "zlocorp",
         "category": "Productivity",
         "websiteURL": "https://github.com/zlocorp/humanizer2",
-        "shortDescription": "Natural writing in Russian and English",
+        "shortDescription": "Natural RU and EN writing",
         "longDescription": "Write, review, edit and rewrite Russian and English text while preserving meaning and voice.",
         "defaultPrompt": [
           "Review my text and suggest improvements without rewriting it.",
